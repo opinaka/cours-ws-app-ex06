@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
-const fs = require('fs');
-
 
 const app = express();
 
@@ -48,7 +46,7 @@ const receivedMessages = [];
 // Route pour recevoir les valeurs du serveur de webhooks
 app.post('/webhooks', (req, res) => {
   // Récupérer la valeur envoyée par le serveur
-  const newMessage = req.body.valeur;
+  const newMessage = req.body;
 
   // Enregistrer la valeur dans la liste
   receivedMessages.push(newMessage);
