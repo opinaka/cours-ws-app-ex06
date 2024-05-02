@@ -27,7 +27,7 @@ const swaggerOptions = {
   customfavIcon: "https://raw.githubusercontent.com/opinaka/cours-ws-app-ex06/main/ynov.png"
 };
 // Servez la documentation Swagger UI à partir du fichier JSON
-app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 
 // Déclaration et initialisation de la liste receivedMessages
 let receivedMessages = [];
