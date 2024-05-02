@@ -116,7 +116,7 @@ const swaggerOptions = {
 };
 
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, swaggerOptions));
+app.use('/', swaggerUi.serve, swaggerUi.setup(specs, swaggerOptions));
 
 // Démarrer le serveur sur le port de votre choix
 const PORT = process.env.PORT || 4000;
