@@ -84,7 +84,7 @@ const options = {
     info: {
       title: 'Webhook endpoint API',
       version: '1.0.0',
-      description: 'L'API Webhook Endpoint permet à votre application de recevoir des notifications en temps réel sur des événements spécifiques, ce qui peut être utile pour déclencher des actions ou des mises à jour en fonction de ces événements.',
+      description: 'L''API Webhook Endpoint permet à votre application de recevoir des notifications en temps réel sur des événements spécifiques, ce qui peut être utile pour déclencher des actions ou des mises à jour en fonction de ces événements.',
     },
     servers: [
       {
