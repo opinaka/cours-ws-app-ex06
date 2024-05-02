@@ -1,2 +1,2 @@
 # Readme
-xc:,xcl*
+a completer
