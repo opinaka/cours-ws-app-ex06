@@ -7,8 +7,8 @@ const app = express();
 // Middleware pour parser le corps des requêtes en JSON
 app.use(bodyParser.json());
 
-// Liste pour enregistrer les valeurs reçues
-const receivedMessages = [];
+// Déclaration et initialisation de la liste receivedMessages
+let receivedMessages = [];
 /**
  * @swagger
  * tags:
@@ -42,7 +42,7 @@ const receivedMessages = [];
  *                 message:
  *                   type: string
  */
-// Route pour recevoir les valeurs du serveur de webhooks
+// Route pour recevoir les messages (payload) du serveur de webhooks
 app.post('/webhooks', (req, res) => {
   // Récupérer la valeur envoyée par le serveur
   const newMessage = req.body;
@@ -51,9 +51,10 @@ app.post('/webhooks', (req, res) => {
   receivedMessages.push(newMessage);
 
   console.log(newMessage);
-  // Répondre pour confirmer la réception de la valeur
+  // Répondre pour confirmer la réception du message
   res.json({ message: 'Valeur reçue avec succès' });
 });
+
 /**
  * @swagger
  * /webhooks:
@@ -70,7 +71,7 @@ app.post('/webhooks', (req, res) => {
  *               items:
  *                 type: string
  */
-// Route pour obtenir toutes les valeurs reçues
+// Route pour obtenir toutes les messages reçues
 app.get('/webhooks', (req, res) => {
   // Répondre avec toutes les valeurs reçues
   res.json(receivedMessages);
