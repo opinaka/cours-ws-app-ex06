@@ -82,7 +82,7 @@ const options = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'Webhook endpoint API',
+      title: 'Webhook API endpoint',
       version: '1.0.0',
       description: 'L\'API Webhook Endpoint permet à votre application de recevoir des notifications en temps réel sur des événements spécifiques, ce qui peut être utile pour déclencher des actions ou des mises à jour en fonction de ces événements.',
     },
