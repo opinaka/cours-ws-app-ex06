@@ -82,13 +82,13 @@ const options = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'Webhook endpoint',
+      title: 'Webhook endpoint API',
       version: '1.0.0',
-      description: 'My REST API',
+      description: 'L'API Webhook Endpoint permet à votre application de recevoir des notifications en temps réel sur des événements spécifiques, ce qui peut être utile pour déclencher des actions ou des mises à jour en fonction de ces événements.',
     },
     servers: [
       {
-        url: 'http://localhost:4000',
+        url: 'https://cours-ws-app-ex06.onrender.com',
       },
     ],
   },
@@ -101,7 +101,7 @@ const specs = swaggerJsdoc(options);
 const swaggerOptions = {
   customCss: `
     .swagger-ui .topbar {
-      background-image: url('https://www.wemaik.com/wp-content/themes/wemaik/images/logo-wemaik_invers.png');
+      background-image: url('./ynov.svg');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -113,7 +113,7 @@ const swaggerOptions = {
     }
   `,
   customSiteTitle: "Opinaka",
-  customfavIcon: "https://www.wemaik.com/wp-content/themes/wemaik/images/logo-wemaik_invers.png"
+  customfavIcon: "./ynov.svg"
 };
 
 
