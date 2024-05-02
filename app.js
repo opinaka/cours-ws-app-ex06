@@ -101,7 +101,7 @@ const specs = swaggerJsdoc(options);
 const swaggerOptions = {
   customCss: `
     .swagger-ui .topbar {
-      background-image: url('./ynov.svg');
+      background-image: url('https://raw.githubusercontent.com/opinaka/cours-ws-app-ex06/main/ynov.png');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -113,7 +113,7 @@ const swaggerOptions = {
     }
   `,
   customSiteTitle: "Opinaka",
-  customfavIcon: "./ynov.svg"
+  customfavIcon: "https://raw.githubusercontent.com/opinaka/cours-ws-app-ex06/main/ynov.png"
 };
 
 
