@@ -8,7 +8,6 @@ const swaggerDocument = require('./doc-api-swagger.json'); // Chemin vers votre 
 // Middleware pour parser le corps des requêtes en JSON
 app.use(bodyParser.json());
 
-
 // Personnalisation du rendu de Swagger UI
 const swaggerOptions = {
   customCss: `
