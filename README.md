@@ -2,6 +2,7 @@
 
 L'API Webhook Endpoint permet à votre application de recevoir des notifications en temps réel sur des événements spécifiques, ce qui peut être utile pour déclencher des actions ou des mises à jour en fonction de ces événements.
 
+
 Pour ajouter une description à votre API Webhook Endpoint, vous pouvez inclure des informations telles que :
 - La fonction de l'API Webhook Endpoint dans votre application.
 - Les événements ou les actions déclencheurs qui sont surveillés par l'API Webhook Endpoint.
